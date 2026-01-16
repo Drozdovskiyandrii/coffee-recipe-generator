@@ -1,3 +1,8 @@
+import os
+import sys
+
+# Ensure repo root is on PYTHONPATH (needed for Streamlit Cloud)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import streamlit as st
 from src.engine import (
     GRINDER_064S,
